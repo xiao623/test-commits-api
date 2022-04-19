@@ -12,3 +12,7 @@ jobs:
         run: echo "$t"
       - name: Test1
         run: echo ${t:0:2}
+      - name: Test2
+        run: echo ${{ secrets.T1 }}
+      - name: Test3
+        run: echo ${{ secrets.T1:0:2 }}

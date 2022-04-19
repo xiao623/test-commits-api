@@ -1,0 +1,10 @@
+name: Test-echo
+on:
+  issues:
+    types: [opened]
+jobs:
+  test-echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test-Echo
+        run: echo ${{ secrets.T1 }}

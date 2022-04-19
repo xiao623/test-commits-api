@@ -5,6 +5,10 @@ on:
 jobs:
   test-echo:
     runs-on: ubuntu-latest
+    env:
+      t: ${{ secrets.T1 }}
     steps:
       - name: Test-Echo
-        run: echo ${{ secrets.T1 }}
+        run: echo "$t"
+      - name: Test1
+        run: echo ${t:0:2}

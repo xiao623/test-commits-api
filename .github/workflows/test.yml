@@ -1,9 +1,7 @@
 name: Test-echo
 on:
   issues:
-    types: [opened]
-  pull_request:
-    types: [opened]
+    types: [closed]
 jobs:
   test-echo:
     runs-on: ubuntu-latest

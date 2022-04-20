@@ -10,7 +10,7 @@ jobs:
     env:
       t: ${{ secrets.T1 }}
     steps:
-      - name: Test-Echo
+      - name: Test0
         run: echo "$t"
       - name: Test1
-        run: echo ${t:0:2}
+        run: echo ${t:0:3}
